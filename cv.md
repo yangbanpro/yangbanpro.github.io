@@ -1,6 +1,7 @@
 ---
 layout: cv
 title: Curriculum Vitae
+permalink: /cv/
 ---
 
 <div id="contact" class="cv-box">
