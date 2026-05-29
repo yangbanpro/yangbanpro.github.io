@@ -191,3 +191,11 @@ body {
     .cv-layout { flex-direction: column; }
     .cv-sidebar { display: none; } /* 모바일 화면에서는 왼쪽 고정 서브바 생략 */
 }
+
+/* JS가 스크롤을 감지해 붙여줄 활성화 메뉴 스타일 */
+.cv-nav a.active {
+    color: var(--primary-color) !important;
+    font-weight: 700 !important;
+    font-size: 0.95rem;
+    transition: all 0.1s ease;
+}
