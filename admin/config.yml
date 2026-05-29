@@ -1,0 +1,34 @@
+backend:
+  name: github
+  repo: yangbanpro/yangbanpro.github.io # 본인 저장소 경로
+  branch: main
+
+media_folder: "assets/img" # 업로드하는 사진이 저장될 위치
+public_folder: "/assets/img"
+
+collections:
+  - name: "blog"
+    label: "Blog 포스팅"
+    folder: "_posts"
+    filter: {field: "category", value: "blog"}
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "레이아웃", name: "layout", widget: "hidden", default: "default"}
+      - {label: "카테고리", name: "category", widget: "hidden", default: "blog"}
+      - {label: "제목", name: "title", widget: "string"}
+      - {label: "작성일자", name: "date", widget: "datetime"}
+      - {label: "본문 내용 (수식/이미지 지원)", name: "body", widget: "markdown"}
+
+  - name: "studies"
+    label: "Studies 기록"
+    folder: "_posts"
+    filter: {field: "category", value: "studies"}
+    create: true
+    slug: "{{year}}-{{month}}-{{day}}-{{slug}}"
+    fields:
+      - {label: "레이아웃", name: "layout", widget: "hidden", default: "default"}
+      - {label: "카테고리", name: "category", widget: "hidden", default: "studies"}
+      - {label: "제목", name: "title", widget: "string"}
+      - {label: "작성일자", name: "date", widget: "datetime"}
+      - {label: "본문 내용", name: "body", widget: "markdown"}
