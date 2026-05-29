@@ -12,7 +12,7 @@ permalink: /blog/
 
 {% for post in site.categories.blog %}
 <div class="folder-card">
-    <img src="https://via.placeholder.com/400x200?text=Robotics+Research" class="folder-card-thumb" alt="Post Thumbnail">
+    <img src="{% if post.image %}{{ post.image | relative_url }}{% else %}https://via.placeholder.com/400x200?text=Robotics+Research{% endif %}" class="folder-card-thumb" alt="Post Thumbnail">
     
     <div class="folder-card-body">
         <h3 class="folder-card-title">
