@@ -21,7 +21,7 @@ permalink: /blog/
         <span class="cv-time">{{ post.date | date: "%Y-%m-%d" }}</span>
     </div>
 </div>
-{% empty %}
+{% else %}
 <p>아직 폴더 내부에 아카이빙된 포스팅이 없습니다.</p>
 {% endfor %}
 
