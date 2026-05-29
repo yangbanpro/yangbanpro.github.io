@@ -1,0 +1,39 @@
+```html
+<!DOCTYPE html>
+<html lang="ko">
+{% include head.html %}
+<body>
+
+    {% include navbar.html %}
+
+    <main class="main-content cv-layout">
+        <!-- 왼쪽 스크롤 추적 미니 내비바 -->
+        <aside class="cv-sidebar">
+            <ul class="cv-nav">
+                <li><a href="#contact">Contact Information</a></li>
+                <li><a href="#summary">Professional Summary</a></li>
+                <li><a href="#experience">Experience</a></li>
+                <li><a href="#education">Education</a></li>
+                <li><a href="#awards">Awards</a></li>
+                <li><a href="#publications">Publications</a></li>
+                <li><a href="#skills">Skills</a></li>
+                <li><a href="#languages">Languages</a></li>
+                <li><a href="#interests">Interests</a></li>
+                <li><a href="#certificates">Certificates</a></li>
+                <li><a href="#projects">Projects</a></li>
+                <li><a href="#references">References</a></li>
+            </ul>
+        </aside>
+
+        <!-- 오른쪽 박스형 상세 본문 -->
+        <section class="cv-body">
+            {{ content }}
+        </section>
+    </main>
+
+    <footer class="footer">
+        <p>&copy; 2026 {{ site.title }}.</p>
+    </footer>
+
+</body>
+</html>
