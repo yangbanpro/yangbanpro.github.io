@@ -5,13 +5,12 @@ title: About Me
 
 # About Me
 
-안녕하세요! 로보틱스 구조와 고수준 인공지능의 융합을 탐구하는 연구자 양반프로입니다. 
-저는 사족 보행 로봇(Quadruped Robot)의 동적 거동 안정성을 보장하는 물리적 제어 루프와 계층적 VLA-RL 아키텍처를 깊이 있게 다루고 있습니다.
+This is Undergraduate Student who studies about robotics control
 
 ### Research Interests
-* **Embodied AI & VLA Models**: 시각-언어-행동 모델을 통한 로봇의 행동 계획 및 비동기 명령 레이어 최적화
-* **Hierarchical Reinforcement Learning**: 저수준 토크 제어 레이어 및 사족 보행 로봇의 피드백 루프 실증
-* **Robotics Simulation**: Isaac Sim 및 RaiSim 환경을 활용한 가상 환경 검증 및 ROS2 기반 실물 로봇 이식
+* **Embodied AI & VLA Models**
+* **Hierarchical Reinforcement Learning**
+* **Robotics Simulation**
 
 ---
 
