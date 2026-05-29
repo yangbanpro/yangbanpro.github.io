@@ -120,3 +120,65 @@ strong { color: #000000; font-weight: 600; }
     .nav-menu { gap: 14px; }
     .nav-menu a { font-size: 0.85rem; }
 }
+
+/* ==========================================================================
+   사진 포함 폴더/카드형 그리드 레이아웃 (al-folio 스타일 변형)
+   ========================================================================== */
+
+/* 카드들을 가로로 이쁘게 정렬해주는 바둑판 그리드 상자 */
+.folder-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 25px;
+    margin-top: 30px;
+}
+
+/* 이미지 생명선이 박힌 폴더형 카드 디자인 */
+.folder-card {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    overflow: hidden; /* 이미지가 카드 둥근 모서리를 빠져나가지 못하게 컷 */
+    box-shadow: var(--card-shadow);
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+    display: flex;
+    flex-direction: column;
+}
+
+.folder-card:hover {
+    transform: translateY(-5px); /* 마우스 올리면 폴더가 위로 살짝 들림 */
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.12);
+}
+
+/* 카드의 상단 이미지를 담당하는 영역 */
+.folder-card-thumb {
+    width: 100%;
+    height: 160px;
+    object-fit: cover; /* 이미지가 찌그러지지 않고 비율 유지하며 꽉 차게 함 */
+    border-bottom: 1px solid var(--border-color);
+}
+
+/* 카드의 텍스트가 들어가는 내부 여백 */
+.folder-card-body {
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    flex-grow: 1;
+}
+
+.folder-card-title {
+    font-size: 1.1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    margin-bottom: 10px;
+}
+
+.folder-card-title a {
+    text-decoration: none;
+    color: var(--text-color);
+}
+
+.folder-card-title a:hover {
+    color: var(--primary-color);
+}
