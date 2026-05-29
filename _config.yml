@@ -1,0 +1,22 @@
+title: YangBan Portfolio
+url: "https://yangbanpro.github.io"
+baseurl: ""
+
+navigation:
+  - title: About
+    url: /
+  - title: Blog
+    url: /blog/
+  - title: Studies
+    url: /studies/
+  - title: Paper Reviews
+    url: /paper-reviews/
+  - title: Projects
+    url: /projects/
+  - title: Publications
+    url: /publications/
+  - title: CV
+    url: /cv/
+
+markdown: kramdown
+highlighter: rouge
