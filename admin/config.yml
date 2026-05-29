@@ -8,7 +8,7 @@ public_folder: "/assets/img"
 
 collections:
   - name: "blog"
-    label: "📁 Blog 포스팅"
+    label: "Blog"
     folder: "_posts"
     filter:
       field: "category"
@@ -24,7 +24,7 @@ collections:
       - {label: "본문 내용 (마크다운/수식)", name: "body", widget: "markdown"}
 
   - name: "studies"
-    label: "📁 Studies 기록"
+    label: "Studies"
     folder: "_posts"
     filter:
       field: "category"
@@ -40,7 +40,7 @@ collections:
       - {label: "본문 내용", name: "body", widget: "markdown"}
 
   - name: "paper-reviews"
-    label: "📁 Paper Reviews 논문 리뷰"
+    label: "Paper Reviews"
     folder: "_posts"
     filter:
       field: "category"
@@ -56,7 +56,7 @@ collections:
       - {label: "본문 내용", name: "body", widget: "markdown"}
 
   - name: "projects"
-    label: "📁 Projects 설계 및 제작"
+    label: "Projects"
     folder: "_posts"
     filter:
       field: "category"
